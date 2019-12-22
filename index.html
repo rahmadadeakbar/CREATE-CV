@@ -5,6 +5,13 @@
             body{
                 background-color:darkslategrey;
             }
+            h1{
+                left: 0;
+                right: 0;
+                z-index: 99999;
+                position: fixed;
+                top: -20px;
+            }
             div{
                 padding: 10px;
             }
@@ -14,15 +21,17 @@
             img {
                 width: 300px;
                 height: 300px;
-                border-radius: 50%;
+                border-radius: 10%;
                 position: relative;
                 top: -92px;
                 right: 85px;
                 z-index: 9999;
             }
 
-            .judul{
+            h3, h1{
                 background-color: rgb(104, 12, 12);
+                padding: 10px;
+                text-align: center;
             }
             a{
                 text-decoration: none;
@@ -31,25 +40,28 @@
             a:hover{
                 color: darkblue;
             }
+            .medsos{
+                padding: 10px;
+            }
             /* style="position: relative;bottom: 86px;" */
         </style>
     </head>
     <body>
         <center>
-        <table>
+        <table style="margin-top:50px;">
             <!-- ini untuk row 1 -->
             <tr>
                 <td colspan="6" style="text-align: center; " class="judul"> <h1>CV RAHMAD ADE AKBAR</h1></td>
             </tr>
 
             <!-- ini untuk row 2 -->
-            <tr>
+            <tr >
                 <td rowspan="4" colspan="2" style="padding: 100px;">
                     <img src="images/gambar.jpg" alt="" width="300px"><br>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Reprehenderit error placeat laborum enim non fugiat odio suscipit quae quas aut. <br> Sed, impedit. Eius aliquam quo sunt accusamus officia, labore omnis.
                 </td>
                 <td colspan="4"  class="judul"><h3>BIODATA</h3></td>
-            </tr>
+            </tr >
 
             <!-- ini untuk row 3 -->
             <tr>
@@ -135,11 +147,11 @@
             </tr>
             <!-- ini untuk row 10 -->
             <tr style="background-color: darkcyan; text-align: center;">
-                <td><a href="">Facebook</a></td>
-                <td><a href="">Instagram</a></td>
-                <td><a href="">Website</a></td>
-                <td><a href="">Youtube</a></td>
-                <td colspan="2"><a href="">Linkedin</a></td>
+                <td class="medsos"><a href="">Facebook</a></td>
+                <td class="medsos"><a href="">Instagram</a></td>
+                <td class="medsos"><a href="">Website</a></td>
+                <td class="medsos"><a href="">Youtube</a></td>
+                <td colspan="2" class="medsos"><a href="">Linkedin</a></td>
             </tr>
 
         </table>
